@@ -1,0 +1,24 @@
+$def with(mp3url="31545232",bgimg="static/images/xlm.jpg",lrc="[00:00.60]软件设计:南昌航空大学夏利民")
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="gbk">
+    <title>Python开发在线音乐播放网站</title>
+<style type="text/css">
+.top {
+	height: 250px;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 120px;
+}
+</style>
+</head>
+<body style="background:url($bgimg)" >
+<form action="/s" method="get">
+<div align="center" class=top >
+<input name="name" type="text" placeholder="请输入要查询的音乐名称"><input name="cx" type="submit" value="提交"><br>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=$mp3url&auto=1&height=66"></iframe>
+</div>
+</form>
+</body>
+</html>
